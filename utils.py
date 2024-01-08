@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import numpy as np
 
 
 def plot_reconstructed_images_and_encodings(original, encodings, reconstructed):
