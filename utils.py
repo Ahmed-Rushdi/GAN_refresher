@@ -30,7 +30,7 @@ def plot_reconstructed_images_and_encodings(original, encodings, reconstructed):
 def noisify(image, noise_type, noise_factor=0.2):
     implemented_noise = {"static", "b&p"}
     if noise_type not in implemented_noise:
-        raise ValueError("results: noise_type must be one of %r." % valid)
+        raise ValueError("results: noise_type must be one of %r." % implemented_noise)
     if noise_type == "static":
         noisy_image = image + noise_factor * np.random.normal(
             loc=0.0, scale=1.0, size=image.shape
